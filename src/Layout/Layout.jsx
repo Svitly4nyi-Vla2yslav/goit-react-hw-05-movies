@@ -1,16 +1,20 @@
-import HomeNav from 'components/HomeNav/HomeNav'
-import React from 'react'
-import { Outlet } from 'react-router-dom'
 
+import React, { Suspense } from 'react'
+import { NavLink, Outlet } from 'react-router-dom'
+import './Layout.css';
 const Layout = () => {
     return (
         <>
-            <HomeNav/>
-            <Outlet />
-
+            <nav className="navbar">
+                <div className="container-nav">
+                    <NavLink className="title-nav" to='/'>Home</NavLink>
+                    <NavLink className="title-nav" to='/movies'>Search🔍</NavLink>
+                </div>
+            </nav>
+            <Suspense fallback={<h3> Loading...⏳</h3>} >
+                <Outlet />
+            </Suspense>
         </>
-
-
     )
 }
 
