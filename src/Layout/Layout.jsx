@@ -11,7 +11,7 @@ const Layout = () => {
                     <NavLink className="title-nav" to='/movies'>Search🔍</NavLink>
                 </div>
             </nav>
-            <Suspense fallback={<h3> Loading...⏳</h3>} >
+            <Suspense fallback={<div> Loading...⏳</div>} >
                 <Outlet />
             </Suspense>
         </>
