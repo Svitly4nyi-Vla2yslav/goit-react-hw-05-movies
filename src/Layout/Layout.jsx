@@ -8,7 +8,7 @@ const Layout = () => {
             <nav className="navbar">
                 <div className="container-nav">
                     <NavLink className="title-nav" to='/'>Home</NavLink>
-                    <NavLink className="title-nav" to='/movies'>Search🔍</NavLink>
+                    <NavLink className="title-nav" to='movies'>Search  🔎</NavLink>
                 </div>
             </nav>
             <Suspense fallback={<div> Loading...⏳</div>} >

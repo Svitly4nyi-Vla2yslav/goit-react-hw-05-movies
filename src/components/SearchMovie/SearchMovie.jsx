@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './SearchMovie.css'
 import PropTypes from 'prop-types'
 const SearchMovie = ({ onSubmit }) => {
     const [query, setQuery] = useState('')
@@ -13,11 +14,12 @@ const SearchMovie = ({ onSubmit }) => {
         setQuery(event.currentTarget.value)
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form  className='form'
+        onSubmit={handleSubmit}>
             
             <input
                 className='input-search'
-                placeholder='Search '
+                placeholder='Search movies.....'
                 onChange={handleChange}
                 value={query}
                 type="text"

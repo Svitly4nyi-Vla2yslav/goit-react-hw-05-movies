@@ -39,7 +39,7 @@ const Cast = () => {
             );
           })}
         </ul>
-      ) : (<spam>We don't have any cast for this movie.</spam>)}
+      ) : (<p>We don't have any cast for this movie.</p>)}
     </div>
   );
 };

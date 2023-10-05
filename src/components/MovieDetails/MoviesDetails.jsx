@@ -15,14 +15,14 @@ export const MoviesDetails = ({movie}) => {
           alt={movie.name}
         />
         <div>
-          <h1>
+          <div>
             <h2>
               {movie.title} {`(${movie.release_date.slice(0, 4)})`}
             </h2>
             <p>
               User score: {Math.round(movie.vote_average * 10)}%
             </p>
-          </h1>
+          </div>
           <div>
             <h3>Overview</h3>
             <p>{movie.overview}</p>

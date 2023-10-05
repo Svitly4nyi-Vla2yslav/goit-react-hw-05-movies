@@ -3,12 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Layout from "Layout/Layout";
 import HomePage from "pages/HomePage/HomePage";
-// import { MoviePage } from "pages/MoviePage/MoviePage";
+import { MoviePage } from "pages/MoviePage/MoviePage";
 
 const MovieDetails = lazy(() => import("pages/MovieDetailsPage/MovieDetailsPage"))
 const Cast = lazy(() => import("./Cast/Cast"))
 const Reviews = lazy(() => import("./Reviews/Reviews"))
-const {MoviePage} = lazy(() => import("pages/MoviePage/MoviePage"))
+// const {MoviePage} = lazy(() => import("pages/MoviePage/MoviePage"))
 
 export const App = () => {
   return (

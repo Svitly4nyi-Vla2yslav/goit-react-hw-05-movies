@@ -1,9 +1,21 @@
-.navbar{
-    background-color: darkcyan;
-    margin-bottom: 30px;
-    padding: 10px;
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #032541;
+  padding: 20px;
 }
-.title-nav{
-    padding-right: 50px;
-    padding-left: 50px;
+.title-nav {
+ font-size: x-large;
+  padding-right: 50px;
+  padding-left: 50px;
+  color : wheat;
+}
+
+.active{
+    color: yellow!important;
+}
+a {
+    list-style: none;
 }
