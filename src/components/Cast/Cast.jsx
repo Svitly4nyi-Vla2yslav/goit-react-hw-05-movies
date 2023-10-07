@@ -40,7 +40,7 @@ const Cast = () => {
             );
           })}
         </ul>
-      ) : (<p className='alert'>We don't have any cast for this movie.</p>)}
+      ) : (<p className='alert'>We don't have any cast for this movie. 😔</p>)}
     </div>
   );
 };

@@ -35,7 +35,7 @@ const Reviews = () => {
         })}
       </ul>
     ) : (
-      <span className='alert'>We don't have any reviews for this movie.</span>
+      <span className='alert'>We don't have any reviews for this movie. 😔</span>
     )}
     </div>
   )
