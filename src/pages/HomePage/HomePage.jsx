@@ -2,6 +2,7 @@ import { setTrendingMovies } from 'Api/ApiMovie';
 import MoviesItem from 'components/MoviesItem/MoviesItem';
 import Notiflix from 'notiflix';
 import React, { useEffect, useState } from 'react'
+import '../../components/MoviesItem/MoviesItem.css'
 
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
@@ -22,7 +23,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <h2>Trending today </h2>
+      <h2 className='trending-title'>Trending today </h2>
       {movies && <MoviesItem movies={movies} />}
     </div>
   )

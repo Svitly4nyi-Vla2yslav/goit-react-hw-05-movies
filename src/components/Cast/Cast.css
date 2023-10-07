@@ -1,0 +1,33 @@
+.cast-container{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+.card-actor{
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100px;
+    height: 250px;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 30px;
+    justify-content: center;
+}
+.name-actor{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 290px;
+  
+}

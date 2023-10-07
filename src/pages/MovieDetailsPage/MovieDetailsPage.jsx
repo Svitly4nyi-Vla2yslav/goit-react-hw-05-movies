@@ -1,6 +1,7 @@
 import { setMovieDetails } from 'Api/ApiMovie';
 import { MoviesDetails } from 'components/MovieDetails/MoviesDetails';
 import Notiflix from 'notiflix';
+import '../../components/MovieDetails/MoviesDetails.css'
 import { useRef, useState, useEffect } from 'react';
 import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
 
@@ -26,9 +27,8 @@ const MovieDetails = () => {
 
   return (
     <>
-      <Link to={backBtn.current}>
-        
-        Go back
+      <Link  to={backBtn.current}>
+         <button className='button-nav' type="button">Go back</button>
       </Link>
       {movie && <MoviesDetails movie={movie} />}
     </>

@@ -14,14 +14,14 @@ const MoviesItem = ({ movies }) => {
                 {movies.map(movie => {
                     return (
                         <li className='gallery' key={movie.id} >
-                            <Link to={`/movies/${movie.id}`} state={{ from: location }}>
+                            <Link to={`/movies/${movie.id}`} state={{ from: location }} className='link-image'>
                             <div className='image-container'><img src={ movie.poster_path
                       ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
                       : image} alt={movie.title}/></div>
                             
                                 <p>{movie.title}</p>
                             </Link>
-                            {/* <p>{movie.title}</p> */}
+                          
                         </li>
                     )
                 })}

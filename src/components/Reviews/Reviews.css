@@ -1,0 +1,32 @@
+.reviews-container {
+  margin: 0 20px;
+  margin-bottom: 60px;
+}
+
+.wraper-author {
+  justify-content: center;
+  align-items: center;
+  background-color: #b9f0c4;
+  border-radius: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid #3ec58e;
+  box-shadow: 0px 0px 20px rgba(62, 197, 142, 0.4);
+}
+
+.author-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: blue;
+}
+
+.content{
+    font-size: 14px;
+    margin-bottom: 10px;
+}

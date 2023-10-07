@@ -2,6 +2,7 @@ import { setMovieReviews } from 'Api/ApiMovie';
 import Notiflix from 'notiflix';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './Reviews.css'
 
 
 const Reviews = () => {
@@ -23,18 +24,18 @@ const Reviews = () => {
 
   return (
     <div>  {reviews.length ? (
-      <ul>
+      <ul className='reviews-container'>
         {reviews.map(({ author, content }) => {
           return (
-            <li key={author}>
-              <p>{author}</p>
-              <p>{content}</p>
+            <li className='wraper-author' key={author}>
+              <p className='author-name'>{author}</p>
+              <p className='content'>{content}</p>
             </li>
           );
         })}
       </ul>
     ) : (
-      <span>We don't have any reviews for this movie.</span>
+      <span className='alert'>We don't have any reviews for this movie.</span>
     )}
     </div>
   )
